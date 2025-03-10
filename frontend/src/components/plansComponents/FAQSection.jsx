@@ -11,7 +11,7 @@ const FAQItem = ({ number, question, answer, isOpen, toggleOpen }) => {
         onClick={toggleOpen}
       >
         <div className="flex items-center">
-          <span className="text-orange-500 font-medium mr-4">
+          <span className="text-blue-500 font-medium mr-4">
             {number.toString().padStart(2, '0')}
           </span>
           <h3 className="font-medium text-gray-800">{question}</h3>
