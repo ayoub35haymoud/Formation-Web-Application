@@ -1,17 +1,26 @@
-import Navbar from "@/components/Navbar";
-import "./globals.css";
+// app/layout.jsx
+import { Inter } from 'next/font/google';
+import Navbar from '@/components/Navbar';
+import './globals.css';
+
+// Initialize the Inter font with Latin subset
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 export const metadata = {
-  title: "E-Tutor",
-  description: "Best online learning platform",
+  title: 'E-tutor - Online Learning Platform',
+  description: 'E-tutor provides high-quality online courses and tutorials',
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr">
-      <body className="pt-16">
+    <html lang="en" className={inter.variable}>
+      <body className="min-h-screen bg-gray-50 m-0 p-0">
         <Navbar />
-        <main className="container mx-auto px-4">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );
