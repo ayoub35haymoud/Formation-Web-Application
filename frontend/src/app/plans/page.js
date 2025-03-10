@@ -1,3 +1,17 @@
+
+
+import HeroPlans from "@/components/plansComponents/HeroPlans";
+import PacksPlans from "@/components/plansComponents/PacksPlans";
+import FAQSection from "@/components/plansComponents/FAQSection";
+
+
 export default function PlansPage() {
-    return <h1 className="text-2xl font-bold">Plans</h1>;
+    return (
+    <div>
+      <HeroPlans />
+      <PacksPlans />
+      <FAQSection />
+
+      </div>
+      )
   }
